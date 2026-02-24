@@ -1,0 +1,76 @@
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-bg-color: #5722CD;
+    /*#4845E4*/
+    --button-bg-color: #ED4385;
+    --text-color: #0C0C0C;
+    --bg-accent-color: #F2F0FF;
+    --section-accent-color: #F3F6F9;
+    --article-accent-color: #7A7A7A;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- * */
+
+.merriweather {
+                   font-family: "Merriweather", serif;
+                   font-optical-sizing: auto;
+                   font-weight: 900;
+               }
+
+
+.roboto {
+             font-family: "Roboto", sans-serif;
+             font-optical-sizing: auto;
+             font-weight: 400;
+             font-style: normal;
+         }
+
+h1 h2 h3 h6 {
+    font-family: Merriweather, serif;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--text-color);
+}
+
+
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+header {
+    background: #4845E4;
+    background: linear-gradient(156deg, rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 73%);
+}
+
+/* --------------- 4.2 Introduction ------------------- */
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
