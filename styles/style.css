@@ -7,10 +7,13 @@
         3.2 Other
     4. Areas
         4.1 Header
-        4.2 Introduction
-        etc.
-    5. Media Queries
-////////////////////////*/
+        4.2 Quote-section
+        4.3 Work-section
+        4.4 Services-section
+        4.5 Form-section
+        4.6 Footer
+        5. Media Queries
+///////////////////////////////*/
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
 * {
@@ -25,52 +28,131 @@
     --button-bg-color: #ED4385;
     --text-color: #0C0C0C;
     --bg-accent-color: #F2F0FF;
-    --section-accent-color: #F3F6F9;
+    --accent-color: #F3F6F9;
     --article-accent-color: #7A7A7A;
 }
 
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: var(--accent-color);
+}
 /* ------------------------------- 2. Typography ----------------------------------- * */
 
 .merriweather {
-                   font-family: "Merriweather", serif;
-                   font-optical-sizing: auto;
-                   font-weight: 900;
-               }
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+}
 
 
 .roboto {
-             font-family: "Roboto", sans-serif;
-             font-optical-sizing: auto;
-             font-weight: 400;
-             font-style: normal;
-         }
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 
-h1 h2 h3 h6 {
-    font-family: Merriweather, serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Merriweather", serif;
 }
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
     color: var(--text-color);
 }
-
 
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 /* --------------- 3.1 Reusables ----------------------- */
 
+.outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inner-container {
+    flex-basis: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.primary-button {
+    background-color: var(--button-bg-color);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 24px;
+    color: var(--accent-color);
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 2em;
+
+}
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+.nav-wrapper {
+    width: 100%;
+    font-weight: 300;
+}
+.nav-wrapper ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 3rem;
+    padding: 2rem 0;
+}
+
+.nav-wrapper li {
+    list-style: none;
+}
 
 header {
     background: #4845E4;
     background: linear-gradient(156deg, rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 73%);
+    color: var(--accent-color);
+    text-align: center;
 }
 
-/* --------------- 4.2 Introduction ------------------- */
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: 4rem;
+    margin: 4rem 0 2rem 0;
+    line-height: 70px;
+}
+
+.header-wrapper p {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+header img {
+    margin-top: 3rem;
+}
+
+/* --------------- 4.2 Quote-section ------------------- */
+
+/*-----------------4.3 Work-section----------------------*/
+
+
+/*-----------------4.4 Service-section----------------------*/
+/*-----------------4.5 Form-section----------------------*/
+/*------------------4.6 Footer----------------------------*/
+
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
