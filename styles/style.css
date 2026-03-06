@@ -24,7 +24,7 @@
 
 :root {
     --header-bg-color: #5722CD;
-    /*#4845E4*/
+    --header-bg-secondary: #4845E4;
     --button-bg-color: #ED4385;
     --text-color: #0C0C0C;
     --bg-accent-color: #F2F0FF;
@@ -54,7 +54,7 @@ a:active {
     font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
     font-family: "Merriweather", serif;
 }
 
@@ -96,6 +96,20 @@ body {
     margin: 2em;
 
 }
+
+.section-background-primary {
+    color: var(--bg-accent-color);
+    width: 100%;
+    border: 1px solid var(--bg-accent-color);
+    font-size: 20em;
+}
+
+.section-background-secondary {
+    color: var(--accent-color);
+    width: 100%;
+    border: 1px solid var(--bg-accent-color);
+    font-size: 20em;
+}
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
@@ -104,6 +118,7 @@ body {
 .nav-wrapper {
     width: 100%;
     font-weight: 300;
+    font-size: 1.2rem;
 }
 .nav-wrapper ul {
     display: flex;
@@ -131,7 +146,7 @@ header {
     align-items: center;
 }
 h1 {
-    font-size: 4rem;
+    font-size: 4em;
     margin: 4rem 0 2rem 0;
     line-height: 70px;
 }
@@ -146,6 +161,25 @@ header img {
 }
 
 /* --------------- 4.2 Quote-section ------------------- */
+.quote-section h3 {
+    font-size: 2.5em;
+    text-align: center;
+    color: var(--header-bg-color);
+    line-height: 2;
+    padding: 200px 0 50px 0;
+    font-weight: 500;
+}
+
+.quote-section h6 {
+    font-size: 1.5em;
+    font-weight: 400;
+    padding-bottom: 100px;
+}
+
+.quote-section a {
+    color: var(--bg-accent-color);
+}
+
 
 /*-----------------4.3 Work-section----------------------*/
 
