@@ -200,14 +200,63 @@ header img {
 /*-----------------4.3 Work-section----------------------*/
 
 .work-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: var(--accent-color);
+}
 
+.work-section h3 {
+    font-size: 1.5em;
+}
+
+.work-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 2em 0;
+}
+
+.work-article:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 
+.work-content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    justify-content: center;
+}
+
+.work-content img {
+    width: 50px;
+    margin: 16px 0 48px 0;
+}
+
+.work-img img {
+    width: 100%;
+    box-shadow: 0 32px 28px -10px rgba(0, 0, 0, 0.22);
+}
+
+.work-img {
+    flex-basis: 600px;
+}
+
+.work-content a{
+    color: var(--header-bg-color);
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.75em;
+    font-weight: 600;
+    margin-top: 25px;
+
+}
 /*-----------------4.4 Service-section----------------------*/
+
+.services-wrapper img {
+    width: 50px;
+}
 /*-----------------4.5 Form-section----------------------*/
 /*------------------4.6 Footer----------------------------*/
 
