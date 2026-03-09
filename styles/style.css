@@ -257,6 +257,13 @@ header img {
 .services-wrapper img {
     width: 50px;
 }
+
+.service-article {
+    
+    border: 1px solid var(--header-bg-color);
+    box-shadow: 0 32px 28px -10px rgba(0, 0, 0, 0.22);
+
+}
 /*-----------------4.5 Form-section----------------------*/
 /*------------------4.6 Footer----------------------------*/
 
