@@ -23,8 +23,8 @@
 }
 
 :root {
-    --header-bg-color: #5722CD;
-    --header-bg-secondary: #4845E4;
+    --header-bg-color: linear-gradient(156deg, rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 73%);
+    --purple: #5722cd;
     --button-bg-color: #ED4385;
     --text-color: #0C0C0C;
     --bg-accent-color: #F2F0FF;
@@ -75,7 +75,7 @@ body {
 }
 
 .inner-container {
-    flex-basis: 1400px;
+    flex-basis: 1200px;
 
     display: flex;
     flex-direction: column;
@@ -89,7 +89,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 20px;
+    margin: 100px 20px;
 }
 
 .primary-button {
@@ -144,8 +144,7 @@ body {
 }
 
 header {
-    background: #4845E4;
-    background: linear-gradient(156deg, rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 73%);
+    background: var(--header-bg-color);
     color: var(--accent-color);
     text-align: center;
 }
@@ -178,22 +177,18 @@ header img {
 .quote-section h3 {
     font-size: 2.0em;
     text-align: center;
-    color: var(--header-bg-color);
-    line-height: 2;
+    color: var(--purple);
     font-weight: 600;
+    margin-bottom: 2rem;
 }
 
 .quote-section h6 {
+    margin-top: 2rem;
     font-size: 1em;
-    padding: 50px 0 100px 0;
 }
 
 .quote-section h6 a {
-    color: var(--header-bg-color);
-}
-
-.quote-section {
-    padding-top: 6rem;
+    color: var(--purple);
 }
 
 
@@ -201,6 +196,7 @@ header img {
 
 .work-section {
     background-color: var(--accent-color);
+    padding: 5em 0;
 }
 
 .work-section h3 {
@@ -211,8 +207,7 @@ header img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
+    width: 100%;
     margin: 2em 0;
 }
 
@@ -239,33 +234,115 @@ header img {
 }
 
 .work-img {
-    flex-basis: 600px;
+    flex-basis: 700px;
 }
 
 .work-content a{
-    color: var(--header-bg-color);
+    color: var(--purple);
     font-family: Roboto, sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.75em;
     font-weight: 600;
     margin-top: 25px;
+}
 
+.work-content a:hover{
+    color: var(--accent-color);
 }
 /*-----------------4.4 Service-section----------------------*/
 
-.services-wrapper img {
-    width: 50px;
+.inner-container__services {
+    flex-basis: 1200px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 10rem 20px;
+
 }
 
 .service-article {
-    
-    border: 1px solid var(--header-bg-color);
+    flex-basis: 350px;
+    border: 1px solid var(--purple);
     box-shadow: 0 32px 28px -10px rgba(0, 0, 0, 0.22);
+    padding: 2rem;
+}
+.service-article img {
+    width: 70px;
+    margin-bottom: 10px;
+}
 
+.service-article h3 {
+    color: var(--purple);
+    padding-bottom: 20px;
+}
+
+.service-article p {
+    font-weight: 300;
 }
 /*-----------------4.5 Form-section----------------------*/
+.form-section {
+    background: var(--header-bg-color);
+    color: var(--accent-color);
+}
+
+.form-section h3 {
+    font-size: 4em;
+    font-weight: 600;
+    margin: 2rem 0 2rem 0;
+    line-height: 70px;
+}
+
+.form-section p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-section input {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+.form-section textarea {
+    padding: 1rem 2rem 5rem 2rem;
+    border-radius: 5px;
+}
+
+
+.form-section button {
+    background: var(--button-bg-color);
+    color: var(--accent-color);
+    border-radius: 24px;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    width: 150px;
+    align-self: center;
+    border: none;
+    box-shadow: 0 32px 28px -10px rgba(0, 0, 0, 0.22);
+}
+
+.form-section label {
+    margin-top: 2rem;
+}
+
 /*------------------4.6 Footer----------------------------*/
+
+footer {
+    text-align: center;
+    padding: 1rem 2rem;
+    background: #0C0C0C;
+    color: var(--article-accent-color);
+    font-weight: 300;
+}
 
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
